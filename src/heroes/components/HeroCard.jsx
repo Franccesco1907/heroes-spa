@@ -23,7 +23,7 @@ export const HeroCard = ({
   // const charactersByHero = (<p>{characters}</p>)
 
   return (
-    <div className="col">
+    <div className="col animate__animated animate__fadeIn">
       <div className="card">
         <div className="row no-gutters">
           <div className="col-4">
@@ -33,16 +33,6 @@ export const HeroCard = ({
             <div className="card-body">
               <h5 className="card-title">{superhero}</h5>
               <p className="card-text">{alter_ego}</p>
-              {/* <p>{characters}</p> */}
-
-              {/* {
-                (alter_ego !== characters)
-                && charactersByHero
-              } */}
-              {/* {
-                (alter_ego !== characters)
-                && <p className="card-text">{characters}</p>
-              } */}
 
               <CharactersByHero characters={characters} alter_ego={alter_ego} />
 
